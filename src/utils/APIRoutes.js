@@ -1,4 +1,4 @@
-export const host = "https://chit-chat-backend-nzwm.vercel.app";
+export const host = "https://chit-chat-backend-tan.vercel.app";
 
 export const registerRoute = `${host}/api/auth/register`;
 export const loginRoute = `${host}/api/auth/login`;
