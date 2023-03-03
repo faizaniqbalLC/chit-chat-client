@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { ToastContainer, toast } from "react-toastify";
@@ -8,6 +8,9 @@ import axios from "axios";
 import logo from "../assets/logo.gif";
 import { loginRoute } from "../utils/APIRoutes";
 const Login = () => {
+  useLayoutEffect(() => {
+    document.title = "Login Page";
+  }, []);
   const navigate = useNavigate();
   const [values, setValues] = useState({
     username: "",

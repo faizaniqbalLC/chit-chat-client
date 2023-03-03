@@ -9,6 +9,9 @@ import Contacts from "../components/Contacts";
 import Welcome from "../components/Welcome";
 import { allUsersRoute, host } from "../utils/APIRoutes";
 const Chat = () => {
+  useLayoutEffect(() => {
+    document.title = "Chatting Page";
+  }, []);
   const socket = useRef();
   const navigate = useNavigate();
   const [contacts, setContacts] = useState([]);

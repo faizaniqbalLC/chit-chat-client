@@ -9,6 +9,9 @@ import loader from "../assets/loader.gif";
 import { setAvatarRoute } from "../utils/APIRoutes";
 import { Buffer } from "buffer";
 const SetAvatar = () => {
+  useLayoutEffect(() => {
+    document.title = "Set Avatar Page";
+  }, []);
   const api = "https://api.multiavatar.com/45678945";
   const navigate = useNavigate();
   const [avatars, setAvatars] = useState([]);
