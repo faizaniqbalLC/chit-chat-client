@@ -65,7 +65,6 @@ const SetAvatar = () => {
     const user1 = localStorage.getItem("chat-app-user");
     const user = JSON.parse(user1);
     if (!user1) {
-      console.log("ok");
       navigate("/login");
     }
     if (user?.avatarImage) {
