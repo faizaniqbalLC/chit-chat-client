@@ -16,13 +16,6 @@ const ChatInput = ({ handleSendMessage }) => {
 
   useEffect(listenForOutsideClick(listening, setListening, menuRef, setIsOpen));
 
-  const handleEmojiClick = (event, emoji) => {
-    console.log({ emoji });
-    let message = msg;
-    message += emoji.emoji;
-    setMsg(message);
-    // setShowEmoji(false);
-  };
 
   const sendChat = (e) => {
     e.preventDefault();
