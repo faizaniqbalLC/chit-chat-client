@@ -14,7 +14,6 @@ const ChatContainer = ({ currChat, currentUser, socket }) => {
   const scrollRef = useRef();
 
   const fetchChat = async () => {
-    console.log({ currentUser, currChat });
     const response = await axios.post(getAllMessageRoute, {
       from: currentUser._id,
       to: currChat._id,
