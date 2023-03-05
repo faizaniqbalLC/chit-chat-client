@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Suspense,lazy } from "react";
-import Login from "./pages/Login";
 import Chat from "./pages/Chat";
 import SetAvatar from "./pages/SetAvatar";
 import loader from "./assets/loader.gif";
@@ -39,6 +38,7 @@ function App() {
 export default App;
 
 const   Register = Loadable(lazy(()=>import ("./pages/Register")));
+const   Login = Loadable(lazy(()=>import ("./pages/Login")));
 
 
 const Container = styled.div`
