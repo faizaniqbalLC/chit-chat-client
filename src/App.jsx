@@ -6,7 +6,6 @@ import styled from "styled-components";
 const Loader =()=>{
   return (
     <Container>
-
       <img src={loader} alt="loaderLazy"/>
     </Container>
   )
