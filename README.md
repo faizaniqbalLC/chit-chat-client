@@ -1,6 +1,6 @@
-# chit-chat-client  
+**chit-chat-client**
 
-## Backend for that chit-chat-backend follow this link:
+Backend for that chit-chat-backend follow this link:
 
 https://github.com/faizaniqbalLC/chit-chat-backend
 
